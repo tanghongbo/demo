@@ -1,0 +1,282 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?5124cz');
+  src:  url('../fonts/icomoon.eot?5124cz#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?5124cz') format('truetype'),
+    url('../fonts/icomoon.woff?5124cz') format('woff'),
+    url('../fonts/icomoon.svg?5124cz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+i {
+	font-family: 'icomoon';
+	font-style: normal;
+}
+.container {
+	width: 1172px;
+	margin:0 auto;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+.t_color {
+	color: #a7a7a7;
+}
+ul,ol {
+	list-style-type: none;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*头部*/
+header {
+	height: 68px;
+	/*background: pink;*/
+	position: relative;
+}
+/*搜索框部分*/
+.logo_img {
+	transition: all 1s;
+}
+.logo_img:hover {
+   transform: scale(0.9,0.9);
+   /*width: 120px;
+   height: 60px;*/
+}
+.select {
+	width: 150px;
+	height: 39px;
+	/*background: skyblue;*/
+	position: absolute;
+	left: 800px;
+	top: 10px;
+}
+.select input {
+	width: 104px;
+	height: 37px;
+	float: left;
+	border: 0px;
+	border-radius: 50px 0 0 50px;
+	outline: none;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.select button {
+	width: 44px;
+	height: 39px;
+	float: left;
+	border: 0px;
+	border-radius: 0 50px 50px 0;
+	cursor: pointer;
+	background: #fff;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 20px;
+	outline: 0;
+}
+.bookselect a{
+	width: 64px;
+	height: 39px;
+	/*background: skyblue;*/
+	position: absolute;
+	left: 990px;
+	top: 10px;
+	text-align: center;
+	line-height: 39px;
+	color: #a7a7a7;
+}
+.it a{
+	width: 126px;
+	height: 39px;
+	/*background: skyblue;*/
+	position: absolute;
+	left: 1102px;
+	top: 10px;
+	text-align: center;
+	line-height: 39px;
+	color: #a7a7a7;
+}
+/*nav 部分*/
+nav {
+	height: 81px;
+	background: #000;
+}
+nav li .li_a {  
+    width: 195px;
+    height: 81px;
+    color: #fff;
+    transition: all 1s;
+}
+nav li .li_a:hover {
+	color: blue;
+}
+nav li {
+	float: left;
+	width: 195px;
+    height: 81px;
+	position: relative;
+	text-align: center;
+    line-height: 70px;
+}
+.n_span {
+	display: block;
+	width: 1px;
+	height: 4px;
+	background: blue;
+	position: absolute;
+	left: 95px;
+	top: 70px;
+	opacity: 0;
+	transition: all 1s;
+} 
+nav li:hover .n_span {
+	opacity: 1;
+    transform: scale(65,1);
+}
+.n_div {
+	position: absolute;
+	width: 80px;
+	/*height: 100px;*/
+	background: pink;
+	top: 81px;
+	left: 60px;
+	background-color:rgba(0,0,0,0.5);
+	visibility: hidden;
+}
+nav li:hover .n_div {
+	visibility: visible;
+}
+.n_div a {
+	/*visibility: visible;*/
+	display: inline-block;
+	width: 80px;	
+	height: 30px;
+	line-height: 80px;	
+}
+/*底部*/
+.f_img {
+	overflow: hidden;
+}
+.f_img p {
+	font-size: 20px;
+}
+.f_img li {
+	width: 234px;
+	height: 121px;
+	float: left;
+	background-size: 190px;
+	background-repeat: no-repeat;
+	background-position: 25px;
+	cursor: pointer;
+	transition: all 1s;
+}
+.f_img li:hover {
+	transform: scale(0.9,0.9);
+}
+.f_img li:nth-child(1) {
+	background-image: url(../images/1.png);
+}
+.f_img li:nth-child(2) {
+	background-image: url(../images/2.png);
+}
+.f_img li:nth-child(3) {
+	background-image: url(../images/3.png);
+}
+.f_img li:nth-child(4) {
+	background-image: url(../images/4.png);
+}
+.f_img li:nth-child(5) {
+	background-image: url(../images/5.png);
+}
+/*底部中间部分*/
+.content {
+	overflow: hidden;
+	background: #363749;
+}
+.content_son1 dl {
+	width: 193px;
+    float: left;
+    text-align: center;
+    padding: 40px 0;
+}
+dt {
+	font-size: 20px;
+	color: #fff;
+}
+dd a {
+	font-size: 14px;
+	color: #c8c8c8;
+}
+dd a:hover {
+	color: blue;
+}
+dt,dd {
+	height: 55px;
+}
+.content_son2 {
+	width: 397px;
+	height: 332px;
+}
+/*底部中间右边部分*/
+.content_son2 p {
+	width: 193px;
+    /*text-align: center;*/
+    padding: 40px 0;
+    font-size: 20px;
+	color: #fff;
+}
+.content_son2 .wb,
+.content_son2 .wx
+ {
+	width: 154px;
+	height: 40px;
+	border: 1px solid #78787c;
+	line-height: 40px;
+	padding: 0px 15px;
+	color: #78787c;
+	border-radius: 30px;
+	cursor: pointer;
+	float: left;
+	position: relative;
+}
+.content_son2 .wx {
+	margin-left: 20px;
+}
+.content_son2 i {
+	float: right;
+
+}
+.two {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #78787c;
+}
+/*底部下端*/
+.copy {
+	height: 52px;
+	line-height: 40px;
+	background: #21212b;
+	color: #fff;
+}
+.copy span {
+	margin: 0 10px;
+}
+.copy ul li {
+    float: left;
+}
+.copy ul li a {
+	color: #fff;
+}
+.copy ul li a:hover {
+	color: blue;
+}
